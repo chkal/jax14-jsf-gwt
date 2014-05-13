@@ -37,7 +37,6 @@ public class DataCreator {
     Zutat kirschen = createZutat("Kirschen", 3.99, 720, Einheit.G);
     Zutat vanillezucker = createZutat("Vanillezucker", 0.99, 1, Einheit.ST);
     Zutat kakao = createZutat("Kakaopulver", 2.99, 250, Einheit.G);
-    Zutat griess = createZutat("Grieß", 1.49, 500, Einheit.G);
     Zutat quark = createZutat("Quark", 0.49, 250, Einheit.G);
 
     // http://www.chefkoch.de/rezepte/1075171213201032/Omas-Marmorkuchen.html
@@ -68,7 +67,6 @@ public class DataCreator {
     addRezeptZutat(quarkkuchen, butter, 125, Einheit.G);
     addRezeptZutat(quarkkuchen, zucker, 400, Einheit.G);
     addRezeptZutat(quarkkuchen, eier, 4, Einheit.ST);
-    addRezeptZutat(quarkkuchen, griess, 100, Einheit.G);
     addRezeptZutat(quarkkuchen, backpulver, 1, Einheit.ST);
     addRezeptZutat(quarkkuchen, quark, 1, Einheit.KG);
     addRezeptZutat(quarkkuchen, vanillezucker, 2, Einheit.ST);
