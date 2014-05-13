@@ -30,13 +30,14 @@
 }
 
 .chart {
-  font: 16px Helvetica;
+  font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  fill: #333;
 }
 
 .chart .axis path,
 .chart .axis line {
   fill: none;
-  stroke: #000;
+  stroke: #333;
   shape-rendering: crispEdges;
 }
 
@@ -46,6 +47,6 @@
 }
 
 .chart .dot {
-  stroke: #000;
+  stroke: #333;
   stroke-width: 1px;
 }

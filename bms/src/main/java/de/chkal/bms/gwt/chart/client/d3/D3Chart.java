@@ -12,7 +12,7 @@ public class D3Chart {
   private JsArray<D3Artikel> artikel = JsArray.createArray().cast();
 
   public D3Chart(String id) {
-    initChart(id, 450, 10);
+    initChart(id, 450, 12);
   }
 
   public void reset() {
@@ -59,7 +59,7 @@ public class D3Chart {
     // the color scale
     var cScale = d3.scale.linear()
         .domain([-50, 0, 50])
-        .range(["green", "black", "red"]);
+        .range(["green", "#333", "red"]);
 
     // map values to screen positions
     xMap = function(d) { 
