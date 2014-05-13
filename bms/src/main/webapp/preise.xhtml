@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<ui:composition template="/template.xhtml">
+
+  <ui:define name="content">
+
+    <h:messages styleClass="alert alert-success" />
+
+    <div class="row">
+      <div class="col-md-6">
+      
+        <h:form id="preiseForm">
+    
+          <h:dataTable var="zutat" value="#{preiseEditPage.rows}"
+            styleClass="table table-striped table-bordered preis-table"
+            columnClasses="name, menge, preis-alt, preis-neu">
+    
+            <h:column headerClass="name">
+              <f:facet name="header">Zutat</f:facet>
+              #{zutat.name}
+            </h:column>
+
+            <h:column headerClass="menge">
+              <f:facet name="header">Menge</f:facet>
+              #{zutat.menge.wert} #{zutat.menge.einheit.label}
+            </h:column>
+    
+            <h:column headerClass="preis-alt">
+              <f:facet name="header">Alter Preis</f:facet>
+              <h:outputText value="#{zutat.preisAlt}">
+                <f:convertNumber type="currency" />
+              </h:outputText>
+            </h:column>
+    
+            <h:column headerClass="preis-neu">
+              <f:facet name="header">Neuer Preis</f:facet>
+              <h:inputText id="preisNeu" value="#{zutat.preisNeu}" 
+                  p:data-zutat-id="#{zutat.id}">
+                <f:convertNumber />
+              </h:inputText>
+            </h:column>
+    
+          </h:dataTable>
+    
+          <div class="button-row">
+          
+            <h:commandButton action="#{preiseEditPage.speichern}" value="Speichern" 
+                styleClass="btn btn-success" />
+  
+            <h:commandButton action="#{preiseEditPage.speichern}" value="Abbrechen" 
+                styleClass="btn btn-default" />
+                
+          </div>
+    
+        </h:form>
+      </div>
+    
+      <div class="col-md-6">
+        <div id="chart"></div>
+      </div>
+      
+    </div>
+    
+    <script src="/bms/chart/chart.nocache.js"></script>
+
+  </ui:define>
+
+</ui:composition>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="helloworld">
+
+  <!-- Dependencies -->
+  <inherits name="com.google.gwt.user.User" />
+
+  <!-- EntryPoint -->
+  <entry-point class="de.chkal.jsfgwt.client.MyEntryPoint" />
+
+  <!-- Super Dev Mode -->
+  <add-linker name="xsiframe" />
+  <set-configuration-property name="devModeRedirectEnabled" value="true" />
+
+</module>

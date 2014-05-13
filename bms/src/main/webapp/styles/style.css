@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+body {
+  padding-top: 80px;
+}
+
+/* ======= Seiten ====== */
+
+.table-kuchen .kuchen {
+  width: 16em;
+}
+
+.table-kuchen .rezept {
+}
+
+.table-kuchen th.rezept  {
+  text-align: center;
+}
+
+.table-kuchen td.rezept table {
+  margin: 0 auto;
+}
+
+.table-kuchen td.rezept table .menge {
+  text-align: right;
+  padding-right: 0.6em;
+}
+
+.table-kuchen td.rezept table .zutat {
+  text-align: left;
+}
+  
+.table-kuchen .kosten {
+  text-align: right;
+  width: 14em;
+}
+
+.table-kuchen .preis {
+  text-align: right;
+  width: 14em;
+}
+
+
+.table-zutaten .zutat {
+}
+
+.table-zutaten .menge {
+  text-align: right;
+  width: 20em;
+}
+
+.table-zutaten .preis {
+  text-align: right;
+  width: 20em;
+}
+
+
+.preis-table .menge {
+  text-align: right;
+}
+
+.preis-table .preis-alt {
+  text-align: right;
+}
+
+.preis-table .preis-neu {
+  text-align: right;
+}
+
+.preis-table .preis-neu input {
+  text-align: right;
+  width: 6em;
+}
+
+.button-row input[type=submit] {
+  margin-right: 10px;
+}
+
+/* ======= Bootstrap ======= */
+
+/*
+  background-color: #b3226c;
+  border-color: #fdf0f6;
+  #ec84ba
+*/
+
+ul.alert {
+  list-style: none;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #fdf0f6;
+}
+
+.navbar-bms {
+  background-color: #b3226c;
+  border-color: #b3226c;
+}
+.navbar-bms .navbar-brand {
+  color: #fff;
+}
+.navbar-bms .navbar-brand:hover,
+.navbar-bms .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-bms .navbar-text {
+  color: #fff;
+}
+.navbar-bms .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-bms .navbar-nav > li > a:hover,
+.navbar-bms .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-bms .navbar-nav > .active > a,
+.navbar-bms .navbar-nav > .active > a:hover,
+.navbar-bms .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #080808;
+}
+.navbar-bms .navbar-nav > .disabled > a,
+.navbar-bms .navbar-nav > .disabled > a:hover,
+.navbar-bms .navbar-nav > .disabled > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-bms .navbar-toggle {
+  border-color: #333;
+}
+.navbar-bms .navbar-toggle:hover,
+.navbar-bms .navbar-toggle:focus {
+  background-color: #333;
+}
+.navbar-bms .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-bms .navbar-collapse,
+.navbar-bms .navbar-form {
+  border-color: #101010;
+}
+.navbar-bms .navbar-nav > .open > a,
+.navbar-bms .navbar-nav > .open > a:hover,
+.navbar-bms .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #080808;
+}

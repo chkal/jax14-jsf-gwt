@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+
+  <!-- Module Dependencies -->
+  <inherits name="com.google.gwt.user.User" />
+  <inherits name="org.fusesource.restygwt.RestyGWT" />
+
+  <!-- Packages -->
+  <source path="model" />
+  <source path="rechner" />
+
+  <!-- Super Dev Mode -->
+  <add-linker name="xsiframe" />
+  <set-configuration-property name="devModeRedirectEnabled" value="true" />
+
+</module>

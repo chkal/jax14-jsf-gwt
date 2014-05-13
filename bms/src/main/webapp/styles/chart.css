@@ -1,0 +1,51 @@
+
+.tooltip {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+  position: absolute;
+  pointer-events: none;
+  font: 16px Helvetica;
+}
+
+.tooltip .n {
+  font-weight: bold;
+}
+
+.tooltip table {
+  margin-top: 4px;
+}
+
+.tooltip td {
+  padding: 2px 4px;
+}
+
+.tooltip td.l {
+}
+
+.tooltip td.v {
+  font-weight: bold;
+  text-align: right;
+}
+
+.chart {
+  font: 16px Helvetica;
+}
+
+.chart .axis path,
+.chart .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.chart .diagonal {
+  stroke: #BDBDBD;
+  stroke-width: 1px;
+}
+
+.chart .dot {
+  stroke: #000;
+  stroke-width: 1px;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="chart">
+
+  <!-- Module Dependencies -->
+  <inherits name="de.chkal.bms.Shared" />
+
+  <!-- EntryPoint -->
+  <entry-point class="de.chkal.bms.gwt.chart.client.ChartEntryPoint" />
+
+</module>

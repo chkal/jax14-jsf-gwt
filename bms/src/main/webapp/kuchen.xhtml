@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html"
+  xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+  xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+  <ui:composition template="/template.xhtml">
+  
+    <ui:define name="content">
+    
+      <h:dataTable var="kuchen" value="#{kuchenListBean.kuchen}" 
+          styleClass="table table-striped table-bordered table-kuchen"
+          columnClasses="kuchen,rezept,kosten,preis">
+      
+        <h:column headerClass="kuchen">
+          <f:facet name="header">Kuchen</f:facet>
+          #{kuchen.name}
+        </h:column>
+
+        <h:column headerClass="rezept">
+          <f:facet name="header">Rezept</f:facet>
+          <h:dataTable var="rezeptZutat" value="#{kuchen.zutaten}"
+              columnClasses="menge, zutat">
+            <h:column>
+              #{rezeptZutat.menge.wert} #{rezeptZutat.menge.einheit.label} 
+            </h:column>
+            <h:column>
+              #{rezeptZutat.zutat.name}
+            </h:column>
+          </h:dataTable>
+        </h:column>
+
+        <h:column headerClass="kosten">
+          <f:facet name="header">Herstellungskosten</f:facet>
+          <h:outputText value="#{kuchen.kosten}">
+            <f:convertNumber type="currency" />
+          </h:outputText>
+        </h:column>
+
+        <h:column headerClass="preis">
+          <f:facet name="header">Verkaufspreis</f:facet>
+          <h:outputText value="#{kuchen.preis}">
+            <f:convertNumber type="currency" />
+          </h:outputText>
+        </h:column>
+
+      </h:dataTable>
+  
+    </ui:define>
+  
+  </ui:composition>
+</html>
